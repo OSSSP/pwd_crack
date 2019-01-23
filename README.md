@@ -11,7 +11,9 @@ The cert and ftp programs support the large-capacity dictionary better. The othe
 
 Install python2.7, an additional python module is required: threadpool
 
-apt-get install python-setuptools easy_install threadpool Install the expect software: apt-get install expect ###How to use: ./cert_crack.py cert filename ##ftp暴暴
+apt-get install python-setuptools easy_install threadpool Install the expect software: apt-get install expect ###How to use: ./cert_crack.py cert filename 
+
+## ftp暴暴
 
 ### Software Linux system to be installed (ubuntu is recommended)
 
@@ -25,7 +27,9 @@ How to use: ./ftp_crack.py ip (port(default 21))
 
 Install python2.7, you need to install additional python modules: threadpool, MySQLdb
 
-apt-get install python-setuptools easy_install threadpool
+apt-get install python-setuptools 
+
+easy_install threadpool
 
 easy_install paramiko 
 
@@ -35,15 +39,21 @@ easy_install paramiko
 
 Install python2.7, you need to install additional python modules: threadpool, MySQLdb
 
-apt-get install python-setuptools easy_install threadpool
+apt-get install python-setuptools 
 
-apt-get install python-mysqldb ###How to use: ./mysql_crack.py ip (port(default 3306)) 
+easy_install threadpool
+
+apt-get install python-mysqldb 
+
+### How to use: ./mysql_crack.py ip (port(default 3306)) 
 
 ## windows brute-breaking Linux system (recommended to use ubuntu)
 
 Install python2.7, you need to install additional python modules: threadpool, MySQLdb
 
-apt-get install python-setuptools easy_install threadpool
+apt-get install python-setuptools 
+
+easy_install threadpool
 
 easy_install impacket
 
