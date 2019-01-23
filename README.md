@@ -1,79 +1,45 @@
 
 # pwd_crack
-cert、ftp、ssh、mysql、windows 暴力破解
+Cert, ftp, ssh, mysql, windows brute force
 
-cert和ftp的程序对大容量字典支持较好，其他的几个是之前写的，暂时没有修改（对大容量字典支持较差，需一次性将字典所有数据读取出来）
+The cert and ftp programs support the large-capacity dictionary better. The other ones are written before and are not modified at present (the large-capacity dictionary support is poor, and all the data in the dictionary needs to be read out at once)
 
-##cert暴力破解
-###需要安装的软件
-Linux系统（建议选用ubuntu）
+##cert暴暴###Software Linux system to be installed (ubuntu is recommended)
 
-安装python2.7,需要额外安装的python模块：threadpool 
+Install python2.7, an additional python module is required: threadpool
 
-<code>
-	apt-get install python-setuptools
+apt-get install python-setuptools
+easy_install threadpool
+Install the expect software:
+apt-get install expect ###How to use: ./cert_crack.py cert filename ##ftp暴暴###Software Linux system to be installed (ubuntu is recommended)
 
-	easy_install threadpool
-</code>
-安装expect软件：
+Install python2.7, an additional python module is required: threadpool
 
-<code>apt-get install expect</code>
-###使用方法：
-./cert_crack.py cert filename
-##ftp暴力破解
-###需要安装的软件
-Linux系统（建议选用ubuntu）
+apt-get install python-setuptools
+easy_install threadpool
+### 使用方法: ./ftp_crack.py ip (port(default 21)) ##ssh brute force Linux system (recommended ubuntu)
+Install python2.7, you need to install additional python modules: threadpool, MySQLdb
 
-安装python2.7,需要额外安装的python模块：threadpool 
+apt-get install python-setuptools
+easy_install threadpool
 
-<code>
-	apt-get install python-setuptools
+easy_install paramiko
+###How to use: ./ssh_crack.py ip (port(default 22))
+##mysql brute force Linux system (recommended ubuntu)
 
-	easy_install threadpool
-</code>
-###使用方法：
-./ftp_crack.py ip (port(default 21))
-##ssh暴力破解
-Linux系统（建议选用ubuntu）
+Install python2.7, you need to install additional python modules: threadpool, MySQLdb
 
-安装python2.7,需要额外安装的python模块：threadpool、MySQLdb 
+apt-get install python-setuptools
+easy_install threadpool
 
-<code>
-	apt-get install python-setuptools
+apt-get install python-mysqldb
+###How to use: ./mysql_crack.py ip (port(default 3306))
+##windows brute-breaking Linux system (recommended to use ubuntu)
 
-	easy_install threadpool
+Install python2.7, you need to install additional python modules: threadpool, MySQLdb
 
-	easy_install paramiko
-</code>
-###使用方法：
-./ssh_crack.py ip (port(default 22))
+apt-get install python-setuptools
+easy_install threadpool
 
-##mysql暴力破解
-Linux系统（建议选用ubuntu）
-
-安装python2.7,需要额外安装的python模块：threadpool、MySQLdb 
-
-<code>
-	apt-get install python-setuptools
-
-	easy_install threadpool
-
-	apt-get install python-mysqldb
-</code>
-###使用方法：
-./mysql_crack.py ip (port(default 3306))
-
-##windows暴力破解
-Linux系统（建议选用ubuntu）
-
-安装python2.7,需要额外安装的python模块：threadpool、MySQLdb 
-
-<code>
-	apt-get install python-setuptools
-
-	easy_install threadpool
-
-	easy_install impacket
-</code>
-###使用方法：
-./win_crack.py ip (port(default 3389))
+easy_install impacket
+###How to use: ./win_crack.py ip (port(default 3389))
